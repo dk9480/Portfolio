@@ -43,7 +43,7 @@ This is a responsive portfolio website showcasing my skills, projects, and profe
   - https://dk9480.github.io/Portfolio/#
 
 # Contact
-  Email: dkvijendra04@gmail.com
-  Phone: (+91) 895-174-2951
-  LinkedIn: https://www.linkedin.com/in/dkvijendrakumar/
-  GitHub: https://github.com/dk9480
+  - Email: dkvijendra04@gmail.com
+  - Phone: (+91) 895-174-2951
+  - LinkedIn: https://www.linkedin.com/in/dkvijendrakumar/
+  - GitHub: https://github.com/dk9480
