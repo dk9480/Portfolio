@@ -1,490 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <!-- https://boxicons.com/usage -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>D K Vijendra Kumar | Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <!-- Header -->
-    <header class="active">
-        <!-- 🅳🅺 -->
-        <a href="#" class="logo">【Dk】</a>
+<header>
+  <div class="container nav">
+    <div class="logo">
+      <div class="logo-mark">DK</div>
+      <span>Vijendra Kumar</span>
+    </div>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <nav>
-            <a href="#" class="active">Home</a>
-            <!-- <a href="#">Services</a> -->
-            <a href="#">Resume</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
+    <nav>
+      <button id="themeToggle">🌙</button>
+      <a href="ME22B2039_VIJENDRA_RESUME_JAN.pdf" class="btn-secondary" download>
+        Download Resume
+      </a>
+    </nav>
+  </div>
+</header>
 
-        </nav>
-    </header>
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
 
-    <!-- Bars BackGround -->
-     <div class="bars-box active">
-        <div class="bar" style="--i:6;"></div>
-        <div class="bar" style="--i:5;"></div>
-        <div class="bar" style="--i:4;"></div>
-        <div class="bar" style="--i:3;"></div>
-        <div class="bar" style="--i:2;"></div>
-        <div class="bar" style="--i:1;"></div>
-     </div>
+    <div>
+      <div class="hero-badge">
+        <span>📍 Chennai, IN</span>
+        <span>🚀 Open to Opportunities</span>
+      </div>
 
-    <!-- Home Section -->
-    <section class="Home active">
-        <div class="Home-Detail">
-            <h1>D K Vijendra Kumar</h1>
-            <h2>I'm a 
-                <span style="--i:5;" data-text="Coder">Coder</span>
-                <span style="--i:4;" data-text="Frontend Developer">Frontend Developer</span>
-                <span style="--i:3;" data-text="Backend Developer">Backend Developer</span>
-                <span style="--i:2;" data-text="Full Stack Web Developer">Full Stack Web Developer</span>
-                <!-- <span style="--i:1;" data-text="Web Developer">Web Developer</span> -->
+      <h1>
+        Building <span class="highlight">AI Systems</span><br/>
+        & Digital Solutions
+      </h1>
 
+      <p class="hero-text">
+        I’m <strong>D K Vijendra Kumar</strong>, a B.Tech Final Year student at IIITDM Kancheepuram,
+        building full-stack applications and AI-driven systems with
+        clean architecture and real-world focus.
+      </p>
 
-            </h2>
-            <p>Hi, I'm D.K. Vijendra Kumar — a web developer and B.Tech student at IIITDM Kancheepuram, specializing in Smart Manufacturing. I build clean, responsive, and scalable web applications using the MERN stack and Django, with a focus on performance and user experience. Passionate about learning by doing, I continuously develop real-world projects that blend technology with practical impact.</p>
-            <div class="btn-sci">
-                <!-- <a href="DK_V(RESUME)._Final.pdf" class="btn">Download Resume</a> --> 
-                <a href="DKRESUME.pdf" class="btn" target="_blank">Download Resume</a>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-secondary">Let’s Connect</a>
+      </div>
+    </div>
 
-                    <!-- .sci  shortcut trick-->
-                    <div class="sci">
-                        <!-- <a href="#"><i class='bx bxl-github' ></i></a> -->
-                        <a href="https://github.com/dk9480" target="_blank">
-                            <i class='bx bxl-github'></i>  <!-- GitHub icon from Boxicons -->
-                        </a>
+    <div class="hero-profile">
+      <img src="Images/Vijju.jpg" alt="D K Vijendra Kumar">
 
+      <div class="profile-json">
+<pre><code>{
+  "name": "D K Vijendra Kumar",
+  "role": "Full Stack & AI Developer",
+  "location": "Chennai, IN",
+  "status": "Open to Opportunities",
+  "focus": [
+    "Backend Systems",
+    "AI-driven Applications",
+    "Scalable Web Solutions"
+  ]
+}</code></pre>
+      </div>
+    </div>
 
-                        <!-- <a href="#"><i class='bx bxl-linkedin' ></i></a> -->
-                        <a href="https://www.linkedin.com/in/dkvijendrakumar/" target="_blank">
-                            <i class='bx bxl-linkedin'></i>  <!-- LinkedIn icon from Boxicons -->
-                        </a>
-                        
-                        <!-- <a href="#"><i class='bx bxl-instagram' ></i></a>   -->
-                        <a href="https://www.instagram.com/its_me_vijju_9480" target="_blank">
-                            <i class='bx bxl-instagram'></i>  <!-- Instagram icon from Boxicons -->
-                        </a>
+  </div>
+</section>
 
-                    </div>
-                </div>
-            </div>
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <h2 class="section-title">Projects & Systems Built</h2>
+
+    <div class="projects-grid">
+
+      <!-- 1 -->
+      <div class="project-card">
+        <h3>AI Data Assistant (RAG SaaS)</h3>
+        <p class="subtitle">Query PDFs & databases using natural language</p>
+        <div class="tags">
+          <span>Node.js</span><span>MySQL</span><span>Pinecone</span><span>LLM</span>
         </div>
-
-        <div class="Home-img">
-            <div class="img-Box">
-                <div class="img-item">
-                    <img src="Images/Vijju.jpg" alt="">
-                </div>
-            </div>
+        <div class="project-footer">
+          <span>AI / Backend</span>
+          <a href="https://github.com/dk9480/AI-Data-Assistant-RAG-based-SaaS-Application" target="_blank">GitHub →</a>
         </div>
-    </section>
+      </div>
 
-
-    <!-- Resume section -->
-    <section class="Resume">
-        <div class="resume-container">
-            <div class="resume-box">
-                <h2>Why Hire Me?</h2>
-                <p class="desc">I merge clean code with creative problem-solving to deliver impactful web experiences. With a strong foundation in full-stack development and a commitment to quality, I turn ideas into reliable digital solutions.</p>
-                <button class="resume-btn active">Experience</button>
-                <button class="resume-btn">Education</button>
-                <button class="resume-btn">Skills</button>
-                <button class="resume-btn">About Me</button>
-                <!-- <button class="resume-btn"></button> -->
-
-            </div>
-            <div class="resume-box">
-                <div class="resume-details experience active">
-                    <h2 class="heading">My <span>Experience</span></h2>
-                    <p class="desc">Aspiring web developer skilled in crafting responsive interfaces and scalable back-end solutions. Driven by curiosity and a hands-on approach, I’m ready to contribute to meaningful, real-world projects.</p>
-
-
-                    <!-- Here experiences list i did so list we are using in that all are there like this for education also etc... -->
-                    <div class="resume-list">
-                        <div class="resume-item">
-                            <p class="year">2025-2025</p>
-                            <p class="company">MERN Task Distributor</p>
-                            <p>Automated task assignment app with secure login, file uploads, agent management, and dynamic dashboard built using the MERN stack.</p>
-                        </div>
-
-
-                        <div class="resume-item">
-                            <p class="year">2024- 2024</p>
-                            <p class="company">Real-time Chat Application</p>
-                            <p>Developed a real-time chat application using HTML, CSS, JavaScript, Node.js, and Socket.io, enabling instant messaging between users in a seamless and interactive environment.</p>
-                        </div>
-
-                        <div class="resume-item">
-                            <p class="year">2024- 2025</p>
-                            <p class="company">Perfume Shop Client</p>
-                            <p>Built a full-stack perfume shop using Node.js, Express, and MongoDB with features like product listings, user authentication, and shopping cart functionality.</p>
-                        </div>
-
-                        <div class="resume-item">
-                            <p class="year">2024- 2025</p>
-                            <p class="company">MERN Book Review App</p>
-                            <p>Full-stack app with user auth, book browsing, and review management. Includes admin-only book controls, genre filters, and secure data handling using JWT and MongoDB Atlas.</p>
-                        </div>
-
-                        <div class="resume-item">
-                            <p class="year">2024-2024</p>
-                            <p class="company">Whether_App</p>
-                            <p>Built a weather app using HTML, CSS, and JavaScript that displays real-time weather data by fetching information from a weather API.</p>
-                        </div>
-
-                        <div class="resume-item">
-                            <p class="year">2024- 2024</p>
-                            <p class="company">Personal Website</p>
-                            <p>Built a responsive portfolio website using HTML, CSS, and JavaScript to showcase my skills, projects, and experience.</p>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <!--Education list started  -->
-                <div class="resume-details Education">
-                    <h2 class="heading">My <span>Education</span></h2>
-                    <p class="desc">About My Education</p>
-
-                    <!-- List we need to make what and all education i took -->
-                    <div class="resume-list">
-                        <div class="resume-item">
-                            <p class="year">2022-2026</p>
-                            <h3>B.Tech in Smart Manufacturing Engineer</h3>
-                            <p class="company">IIITDM Kancheepuram Chennai</p>
-                            <p>IIITDM Chennai, Specializing in software development, algorithms, and data structures.</p>
-                        </div>
-
-
-
-
-                        <div class="resume-item">
-                            <p class="year">2028 - 2022</p>
-                            <h3>Class X and Class XII</h3>
-                            <p class="company">Karnataka</p>
-                            <p>DDU International School & Narayana College, Karnataka High School & Pre-University</p>
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-                <!-- Resume Skills Starts -->
-                <div class="resume-details Skills">
-                    <h2 class="heading">My <span>Skills</span></h2>
-                    <p class="desc">Experienced in web technologies (HTML, CSS, JavaScript, React, Node.js) and programming languages (Java, Python). Skilled in data analysis and machine learning with tools like Pandas and Scikit-learn.</p>
-
-                    <div class="resume-list">
-                        <div class="resume-item">
-
-                            <!-- Here i is took from boxicon -->
-                            <i class='bx bxl-html5'></i> 
-                            <span>HTML5</span>
-                        </div>
-                        
-                        <div class="resume-item">
-                            <i class='bx bxl-css3' ></i>
-                            <span>CSS3</span>
-                        </div>
-
-                        <div class="resume-item">
-                            <i class='bx bxl-javascript' ></i>
-                            <span>JavaScript</span>
-                        </div>
-
-                        <div class="resume-item">
-                            <i class='bx bxl-react' ></i>
-                            <span>React.js</span>
-                        </div>
-
-                        <div class="resume-item">
-                            <i class='bx bxl-vuejs' ></i>
-                            <span>Vue.js</span>
-                        </div>
-
-                        <div class="resume-item">
-                            <i class='bx bxl-tailwind-css' ></i>
-                            <span>Tailwind CSS</span>
-                        </div>
-
-                        <div class="resume-item">
-                            <i class='bx bxl-nodejs' ></i>
-                            <span>Node.js</span>
-                        </div>
-
-                        <div class="resume-item">
-                            <i class='bx bxl-mongodb' ></i>
-                            <span>MongoDB</span>
-                        </div>
-
-                        <div class="resume-item">
-                            <!-- <i class='bx bxl-mongodb' ></i> -->
-                            <i class='bx bxl-python' ></i>
-                            <span>Data Science</span>
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-
-                <!-- Now About Me will go -->
-                <div class="resume-details About">
-                    <h2 class="heading">About <span>Me</span></h2>
-                    <p class="desc">I'm a web developer with a passion for building responsive and user-friendly applications. I enjoy learning new technologies and creating practical digital solutions.</p>
-                    <div class="resume-list">
-                        <div class="resume-item">
-                            <p>Name <span>D K VIJENDRA KUMAR</span></p>
-                        </div>
-
-                        <div class="resume-item">
-                            <p>Gender <span>Male</span></p>
-                        </div>
-
-                        <div class="resume-item">
-                            <p>Age <span>22 Yers Old</span></p>
-                        </div>
-
-                        <div class="resume-item">
-                            <p>City <span>Kalaburagi</span></p>
-                        </div>
-
-                        <div class="resume-item">
-                            <p>Nationality <span>Indian</span></p>
-                        </div>
-
-                        <div class="resume-item">
-                            <p>Experience <span>Fresher</span></p>
-                        </div>
-
-                        <div class="resume-item">
-                            <p>Full Time <span>Available</span></p>
-                        </div>
-
-                        <div class="resume-item">
-                            <p>Phone<span>(+91) 895 174 2951 </span></p>
-                        </div>
-
-                        <div class="resume-item">
-                            <p>Email<span>dkvijendra04@gmail.com</span></p>
-                        </div>
-
-                        <div class="resume-item">
-                            <p>Languages<span>English,Hindi,Kannada and Telugu</span></p>
-                        </div>
-
-                        <!-- <div class="resume-item">
-                            <p><span></span></p>
-                        </div> -->
-                    </div>
-                </div>
-
-
-
-            </div>
+      <!-- 2 -->
+      <div class="project-card">
+        <h3>MERN Task Distributor</h3>
+        <p class="subtitle">Role-based task automation system</p>
+        <div class="tags">
+          <span>React</span><span>Node.js</span><span>MongoDB</span><span>JWT</span>
         </div>
-    </section>
-
-    <!-- Portfolio Section -->
-     <section class="portfolio ">
-        <h2 class="heading">Latest <span>Project</span></h2>
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <div class="portfolio-details active">
-                    <p class="numb">01</p>
-                    <h3>Full Stack Projects</h3>
-                    <p>Developed a full-stack perfume inventory system with features to add, view, search, and delete items. Built using React for the frontend and Express/Node.js with MongoDB for the backend. Integrated dynamic search, responsive card layout, and API communication via Axios, with thorough route testing using Postman.</p>
-                    <div class="tech">
-                        <p>React.js, Node.js, Express.js, MongoDB, Axios, CSS</p>
-                    </div>
-
-                    <div class="live-github">
-                        <a href="#"><i class='bx bx-arrow-back' ></i><span>Live Projects</span></a>
-                        <a href="https://github.com/dk9480/perfume-shop-client" target="_blank"><i class='bx bxl-github' ></i><span>Github Repository</span></a>
-                    </div>
-                </div>
-
-                <div class="portfolio-details">
-                    <p class="numb">02</p>
-                    <h3>Full Stack Projects</h3>
-                    <p>Developed a real-time chat application using HTML, CSS, JavaScript, Node.js, and Socket.io, enabling instant messaging between users in a seamless and interactive environment.</p>
-                    <div class="tech">
-                        <p>HTML , JavaScript , CSS , Express.js , React.js , Node.js</p>
-                    </div>
-
-                    <div class="live-github">
-                        <a href="#"><i class='bx bx-arrow-back' ></i><span>Live Projects</span></a>
-                        <a href="https://github.com/dk9480/Real-time-ChatApplication" target="_blank"><i class='bx bxl-github' ></i><span>Github Repository</span></a>
-                    </div>
-                </div>
-
-                <div class="portfolio-details">
-                    <p class="numb">03</p>
-                    <h3>Frontend Projects</h3>
-                    <p>Built a weather app using HTML, CSS, and JavaScript that displays real-time weather data by fetching information from a weather API.</p>
-                    <div class="tech">
-                        <p>HTML5 , CSS3 , JavaScript</p>
-                    </div>
-
-                    <div class="live-github">
-                        <a href="#"><i class='bx bx-arrow-back' ></i><span>Live Projects</span></a>
-                        <a href="https://github.com/dk9480/Whether_App" target="_blank"><i class='bx bxl-github' ></i><span>Github Repository</span></a>
-                    </div>
-                </div>
-
-                <div class="portfolio-details">
-                    <p class="numb">04</p>
-                    <h3>MERN Task Distributor – Full-Stack Web App </h3>
-                    <p>Built and deployed a full-stack task management system to streamline admin task allocation. Included secure JWT auth, agent CRUD with role control, CSV/XLSX upload support, and automated task distribution logic. Enhanced UX with search/filter features and a responsive dashboard. Deployed using MongoDB Atlas for scalable cloud storage.</p>
-                    <div class="tech">
-                        <p>React.js, Node.js, Express.js, MongoDB, JWT, Multer, csvtojson, xlsx </p>
-                    </div>
-
-                    <div class="live-github">
-                        <a href="#"><i class='bx bx-arrow-back' ></i><span>Live Projects</span></a>
-                        <a href="https://github.com/dk9480/mern-task-distributor" target="_blank"><i class='bx bxl-github' ></i><span>Github Repository</span></a>
-                    </div>
-                </div>
-
-                <div class="portfolio-details">
-                    <p class="numb">05</p>
-                    <h3>MERN Book Review App – Full-Stack Web App </h3>
-                    <p>Built a secure MERN-based book review platform with user login/signup, JWT authentication, and role-based access. Users can add/edit/delete reviews, while admins manage books. Features include search, genre filters, and user dashboards. Backend deployed on MongoDB Atlas for scalable storage.</p>
-                    <div class="tech">
-                        <p>React.js, Node.js, Express.js, MongoDB, JWT, Axios, React Router, Custom CSS </p>
-                    </div>
-
-                    <div class="live-github">
-                        <a href="#"><i class='bx bx-arrow-back' ></i><span>Live Projects</span></a>
-                        <a href="https://github.com/dk9480/Book-Review-Platform" target="_blank"><i class='bx bxl-github' ></i><span>Github Repository</span></a>
-                    </div>
-                </div>
-
-                <div class="portfolio-details">
-                    <p class="numb">06</p>
-                    <h3>Frontend Projects </h3>
-                    <p>I designed and developed a fully responsive personal portfolio website to showcase my projects, technical skills, and contact information. The site features smooth navigation and an interactive user interface aimed at delivering an engaging user experience. To ensure optimal performance across all devices, I utilized modern CSS techniques such as Flexbox and Media Queries, creating a layout that adapts seamlessly to different screen sizes and resolutions. </p>
-                    <div class="tech">
-                        <p>HTML, CSS, JavaScript</p>
-                    </div>
-
-                    <div class="live-github">
-                        <a href="#"><i class='bx bx-arrow-back' ></i><span>Live Projects</span></a>
-                        <a href="https://github.com/dk9480/Portfolio" target="_blank"><i class='bx bxl-github' ></i><span>Github Repository</span></a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="portfolio-box">
-                <!-- Image Carousel -->
-                 <div class="portfolio-carousel">
-                    <div class="img-slide">
-                        <div class="img-item">
-                            <img src="Images/p_.jpg" alt="">
-                        </div>
-
-                        <div class="img-item">
-                            <img src="Images/Realtime Chat Application_.jpg" alt="">
-                        </div>
-
-                        <div class="img-item">
-                            <img src="Images/Weather_app.jpg" alt="">
-                        </div>
-
-                        <div class="img-item">
-                            <img src="Images/Task.png" alt="">
-                        </div>
-
-                        <div class="img-item">
-                            <img src="Images/Book2.png" alt="">
-                        </div>
-
-                        <div class="img-item">
-                            <img src="Images/Personal.jpg" alt="">
-                        </div>
-                    </div>
-                 </div>
-                 <div class="navigation">
-                    <button class="arrow-left disabled"><i class='bx bx-chevron-left' ></i></button>
-                    <button class="arrow-right"><i class='bx bx-chevron-right' ></i></button>
-                 </div>
-            </div>
+        <div class="project-footer">
+          <span>Full Stack</span>
+          <a href="https://github.com/dk9480/mern-task-distributor" target="_blank">GitHub →</a>
         </div>
-     </section>
-    
-    <!-- Contact Section -->
-     <section class="contact">
-        <div class="contact-container">
-            <div class="contact-box">
-                <h2>Let's Work Together </h2>
-                <p class="desc">Let's create something extraordinary together! Whether it’s a website, an app, or a data-driven solution, I’m ready to team up and bring your ideas to life.</p>
-                <div class="contact-details">
-                    <i class='bx bxs-phone'></i>
-                    <div class="details">
-                        <p>Phone</p>
-                        <p>(+91) 895-174-2951</p>
-                    </div>
-                </div>
+      </div>
 
-
-                <div class="contact-details">
-                    <i class='bx bxs-envelope' ></i>
-                    <div class="details">
-                        <p>Email</p>
-                        <p>dkvijendra04@gmail.com</p>
-                    </div>
-                </div>
-
-                <div class="contact-details">
-                    <i class='bx bxs-map'></i>
-                    <div class="details">
-                        <p>Address</p>
-                        <p>IIITDM KANCHEEPURAM CHENNAI TAMILNADU Chennai-600127 </p>
-                    </div>
-                </div>
-
-
-            </div>
-
-            <div class="contact-box">
-                <form action="">
-                    <h2 class="heading">Contact <span>Me!</span></h2>
-                    <div class="field-box">
-                        <input type="text" placeholder="Full Name" required>
-                        <input type="email" placeholder="Email Address" required>
-                        <input type="text" placeholder="Phone Number" required>
-                        <input type="text" placeholder="Email Subject" required>
-                        <textarea name="" id="" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
-
-            </div>
+      <!-- 3 -->
+      <div class="project-card">
+        <h3>AI Medical Report Reader</h3>
+        <p class="subtitle">OCR + LLM medical summarization</p>
+        <div class="tags">
+          <span>OCR</span><span>LLM</span><span>React</span>
         </div>
-     </section>
-    
-    
+        <div class="project-footer">
+          <span>AI</span>
+          <a href="https://github.com/dk9480/AI-Powered-Medical-Report-Reader" target="_blank">GitHub →</a>
+        </div>
+      </div>
 
-    
-    
+      <!-- 4 -->
+      <div class="project-card">
+        <h3>Milk Fat Prediction System</h3>
+        <p class="subtitle">Regression-based analytics project</p>
+        <div class="tags">
+          <span>Python</span><span>Pandas</span><span>Regression</span>
+        </div>
+        <div class="project-footer">
+          <span>Data Science</span>
+        </div>
+      </div>
 
-    <script src="js/script.js"></script>
+      <!-- ✅ 5 (ADDED) -->
+      <div class="project-card">
+        <h3>Quant Developer Evaluation Assignment</h3>
+        <p class="subtitle">Real-time pair trading analytics system</p>
+        <div class="tags">
+          <span>Python</span>
+          <span>FastAPI</span>
+          <span>Statsmodels</span>
+          <span>React.js</span>
+          <span>Binance WS</span>
+          <span>SQLite</span>
+        </div>
+        <div class="project-footer">
+          <span>Quant / Trading</span>
+          <a href="https://github.com/dk9480/quant-trading-app" target="_blank">GitHub →</a>
+        </div>
+      </div>
+
+      <!-- ✅ 6 (ADDED) -->
+      <div class="project-card">
+        <h3>AI-Powered Appointment Scheduler</h3>
+        <p class="subtitle">OCR + NLP based intelligent scheduling system</p>
+        <div class="tags">
+          <span>Node.js</span>
+          <span>Python</span>
+          <span>Flask</span>
+          <span>EasyOCR</span>
+        </div>
+        <div class="project-footer">
+          <span>AI / Backend</span>
+          <a href="https://github.com/dk9480/ai-powered-scheduling-system" target="_blank">GitHub →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY (UNCHANGED) -->
+<section class="alt journey">
+  <div class="container narrow">
+    <h2 class="section-title">My Journey</h2>
+
+<div>
+  <span>1</span>
+  <p>
+    Started by crafting web interfaces, then moved deeper into backend
+    engineering and AI systems that power real applications.
+  </p>
+</div>
+
+<div>
+  <span>2</span>
+  <p>
+    Fascinated by system behavior at scale — API performance under load,
+    data consistency, and NLP pipelines in imperfect environments.
+  </p>
+</div>
+
+<div>
+  <span>3</span>
+  <p>
+    My approach is simple: build, break, learn, and rebuild until the system
+    works the way it should in the real world.
+  </p>
+</div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+    <p>Email: <a href="mailto:dkvijendra04@gmail.com">dkvijendra04@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/dk9480" target="_blank">dk9480</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/dkvijendrakumar/" target="_blank">Profile</a></p>
+  </div>
+</section>
+
+<footer>© 2025 D K Vijendra Kumar</footer>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <button id="closeModal">×</button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
-
 </html>
-
-
-
