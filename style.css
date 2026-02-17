@@ -23,7 +23,7 @@ header{position:fixed;width:100%;background:rgba(0,0,0,.6);backdrop-filter:blur(
 nav a,nav button{margin-left:16px;color:var(--muted);background:none;border:none;cursor:pointer}
 
 .hero{padding:120px 0}
-.hero-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:80px}
+.hero-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:40px}
 .hero-badge span{background:var(--bg2);padding:6px 12px;border-radius:20px;margin-right:8px;font-size:14px}
 .highlight{color:var(--primary)}
 
@@ -92,4 +92,5 @@ footer{text-align:center;padding:30px;border-top:1px solid var(--border);color:v
   .hero-grid{grid-template-columns:1fr}
   .hero-profile{flex-direction:column;text-align:center}
 }
+
 
